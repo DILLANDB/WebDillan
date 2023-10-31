@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Portafolio</title>
+</head>
+<body> 
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Dillan</a>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobreMi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="assets/GitHub.png" alt="">
+            </div>
+            <h1>DILLAN DIAZ</h1>
+            <h2>Electronico Industrial - Programador JR</h2>
+            <div class="redes">
+                <a target="_blank" href="https://www.linkedin.com/in/dillan-diaz/"><i class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/DILLANDB"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href=" https://wa.me/573012810519"><i class="fa-brands fa-whatsapp"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+      <!--Sobre Mi-->
+    <section id="sobreMi" class="sobreMi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola soy Dillan.</span> un apasionado estudiante de programación y electrónica en constante aprendizaje. Mi experiencia en JavaScript básico, HTML y CSS me permite crear páginas web dinámicas y atractivas, mientras que mis habilidades en electrónica me permiten trabajar con herramientas más avanzadas como PLCs y programar equipos electrónicos IOT. </p>
+        </div>
+        <a href="/Descargas/CV-Dillan-Diaz.pdf" download="CV-Dillan-Diaz">
+            <button>
+                DESCARGAR CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </a>
+      
+    </section>
+
+      <!--SECCION SKILLS-->
+      <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+        </div>
+        <div class="col">
+            <div class="contenedor-skills">
+                <div class="skill">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-node-js"></i>
+                    <span>Node-JS</span>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <span>GIT</span>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS</span>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--SECCION PORTAFOLIO-->
+      <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a target="_blank" href="https://dillandb.github.io/portafolio./">
+                    <img src="/assets/secretcode_print.png" alt="">
+                    <div class="overlay">
+                        <h3>Encriptador de texto</h3>
+                        <p>codificacion</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a  target="_blank" href="https://dillandb.github.io/portafolio./">
+                        <img src="/assets/forca_print.png" alt="">
+                        <div class="overlay">
+                            <h3>Encriptador de texto</h3>
+                            <p>codificacion</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a  target="_blank" href="https://dillandb.github.io/portafolio./">
+                        <img src="/assets/forca_print.png" alt="">
+                        <div class="overlay">
+                            <h3>Encriptador de texto</h3>
+                            <p>codificacion</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--SECCION CONTACTO-->
+    
+      <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form id="contact-form">
+                        <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                        <input type="email" name="correo" placeholder="Correo Electrónico" required>
+                        <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <button type="submit">
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+       <!--Footer-->
+       <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-sharp fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a target="_blank" href="https://www.linkedin.com/in/dillan-diaz/"><i class="fa-brands fa-linkedin"></i></a>
+
+            <a target="_blank" href="https://github.com/DILLANDB"><i class="fa-brands fa-github"></i></a>
+
+            <a target="_blank" href=" https://wa.me/573012810519"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+       </footer>
+<script src="validacion.js"></script>
+</body>
+</html>
